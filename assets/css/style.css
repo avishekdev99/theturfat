@@ -259,3 +259,58 @@ height: 100%;
 
 
 
+/* footer section css start */
+.site-footer{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.footer-logo img {
+    max-width: 250px;
+}
+.social-links li a {
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #007bff;
+}
+.social-links ul{
+    display: flex;
+    align-items: center;
+}
+.social-links ul li{
+    padding-right: 30px;
+}
+.footer-logo {
+    margin-bottom: 30px;
+}
+.footer-heading h4 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #000;
+}
+.footer-heading {
+    margin-bottom: 30px;
+}
+.footer-links ul li a {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+.footer-links ul li{
+    padding: 5px 0;
+}
+.copy-right p{
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.copy-right{
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+/* footer section css end */
