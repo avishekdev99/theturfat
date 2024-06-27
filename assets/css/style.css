@@ -149,7 +149,7 @@ width: 100%;
     color: #fff;
     font-size: 1rem;
 }
-.menuToggle{
+.navToggle{
     position: relative;
     transition: all 0.3s linear;
 
@@ -163,7 +163,7 @@ width: 100%;
     display: none;
     transition: all 0.3s linear;
 }
-.menuToggle:hover .sub-menu, .sub-menu:hover{
+.navToggle:hover .sub-menu, .sub-menu:hover{
     display: block;
     transition: all 0.3s linear;
 
