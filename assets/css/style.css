@@ -111,6 +111,9 @@ padding: 20px 0;
     color: #000;
     position: relative;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 .main-nav ul li a::before{
     content: '';
@@ -118,12 +121,12 @@ padding: 20px 0;
     bottom: -7px;
     width: 0%;
     height: 2px;
-    background-color: #b02c41;
+    background-color: #ff8400;
     transition: all 0.3s linear;
 
 }
 .main-nav ul li a:hover, .main-nav ul li a.active{
-    color: #b02c41;
+    color: #ff8400;
 }
 .main-nav ul li a:hover::before, .main-nav ul li a.active::before {
 width: 100%;
@@ -133,6 +136,37 @@ width: 100%;
     z-index: 99;
     width: 100%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.sub-menu ul {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+}
+.sub-menu ul li{
+    padding: 7px 0;
+}
+.sub-menu ul li a{
+    color: #fff;
+    font-size: 1rem;
+}
+.menuToggle{
+    position: relative;
+    transition: all 0.3s linear;
+
+}
+.sub-menu {
+    background: #007bff;
+    padding: 20px 25px;
+    position: absolute;
+    z-index: 9;
+    width: 250px;
+    display: none;
+    transition: all 0.3s linear;
+}
+.menuToggle:hover .sub-menu, .sub-menu:hover{
+    display: block;
+    transition: all 0.3s linear;
+
 }
 /* header css end  */
 
@@ -257,6 +291,112 @@ height: 100%;
 }
 /* link card css end */
 
+/* BLEIBEN page css start  */
+.site-banner.sub-banner {
+    height: 50vh;
+}
+.site-banner.sub-banner h1 {
+    font-size: 2.8rem;
+}
+.top-text p {
+    font-size: 1rem;
+    text-align: center;
+}
+.bleiben-card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 15px;
+    border: 5px solid #a2a3a43b;
+height: 100%;
+transition: box-shadow 0.2s ease, transform 0.2s ease;
+position: relative;
+
+}
+.bleiben-card:hover{
+    box-shadow: 0 34px 32px -33px rgba(0, 0, 0, .18);
+    transform: translate(0px, -3px);
+}
+.bleiben-card:hover img{
+    transform: scale(1.05) rotate(1deg);
+}
+
+.bleiben-img {
+    height: 250px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+.bleiben-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+.bleiben-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #000;
+}
+.bleiben-text p{
+    font-size: 1rem;
+    word-break: break-all;
+}
+.bleiben-text a{
+    font-size: 0.875rem;
+    padding: 12px 30px;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+    transition: all 0.3s linear;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+ 
+}
+.bleiben-text a:hover{
+    background-color: #ff8400;
+    border-color: #ff8400;
+}
+.Sehen-main .bleiben-text{
+    padding-bottom: 0;
+}
+.bleiben-text {
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.casino-name p{
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.casino-main .col-lg-4, .casino-main .col-lg-6{
+    margin-bottom: 25px;
+}
+.bleiben-main .col-lg-4, .bleiben-main .col-lg-6 {
+    margin-bottom: 25px;
+}
+.bottom-text  p{
+    text-align: center;
+    font-size: 1rem;
+}
+.casino-main .bleiben-img {
+    height: 300px;
+}
+.contact-text p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.contact-text {
+    text-align: center;
+    margin: 20px 0;
+}
+.contact-main .row {
+    justify-content: center;
+}
+/* BLEIBEN page css end */
 
 
 /* footer section css start */
@@ -267,7 +407,7 @@ height: 100%;
     max-width: 250px;
 }
 .social-links li a {
-    font-size: 20px;
+    font-size: 1.25rem;
     height: 50px;
     width: 50px;
     border: 1px solid #007bff;
@@ -275,7 +415,12 @@ height: 100%;
     justify-content: center;
     align-items: center;
     color: #fff;
-    background: #007bff;
+    background-color: #007bff;
+    transition: all 0.3s linear;
+}
+.social-links li a:hover{
+    background-color: #ff8400;
+    border-color: #ff8400;
 }
 .social-links ul{
     display: flex;
@@ -288,7 +433,7 @@ height: 100%;
     margin-bottom: 30px;
 }
 .footer-heading h4 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 700;
     color: #000;
 }
@@ -296,15 +441,20 @@ height: 100%;
     margin-bottom: 30px;
 }
 .footer-links ul li a {
-    font-size: 16px;
+    font-size: 1rem;
     color: #000;
     font-weight: 500;
+    transition: all 0.3s linear;
+
+}
+.footer-links ul li a:hover{
+    color: #ff8400;
 }
 .footer-links ul li{
     padding: 5px 0;
 }
 .copy-right p{
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 0;
 }
 .copy-right{
