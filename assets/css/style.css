@@ -121,12 +121,12 @@ padding: 20px 0;
     bottom: -7px;
     width: 0%;
     height: 2px;
-    background-color: #ff8400;
+    background-color: #007bff;
     transition: all 0.3s linear;
 
 }
 .main-nav ul li a:hover, .main-nav ul li a.active{
-    color: #ff8400;
+    color: #007bff;
 }
 .main-nav ul li a:hover::before, .main-nav ul li a.active::before {
 width: 100%;
@@ -148,6 +148,12 @@ width: 100%;
 .sub-menu ul li a{
     color: #fff;
     font-size: 1rem;
+}
+.sub-menu ul li a:hover::before{
+background-color: #fff;
+}
+.sub-menu ul li a:hover{
+    color: #fff;
 }
 .navToggle{
     position: relative;
@@ -358,8 +364,8 @@ position: relative;
  
 }
 .bleiben-text a:hover{
-    background-color: #ff8400;
-    border-color: #ff8400;
+    background-color: transparent;
+    color: #007bff;
 }
 .Sehen-main .bleiben-text{
     padding-bottom: 0;
@@ -440,8 +446,9 @@ position: relative;
     transition: all 0.3s linear;
 }
 .social-links li a:hover{
-    background-color: #ff8400;
-    border-color: #ff8400;
+    background-color: transparent;
+    border-color: #007bff;
+    color: #007bff;
 }
 .social-links ul{
     display: flex;
@@ -469,7 +476,7 @@ position: relative;
 
 }
 .footer-links ul li a:hover{
-    color: #ff8400;
+    color: #007bff;
 }
 .footer-links ul li{
     padding: 5px 0;
