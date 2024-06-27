@@ -396,6 +396,27 @@ position: relative;
 .contact-main .row {
     justify-content: center;
 }
+.contact-text p a {
+    font-weight: 700;
+    color: #000;
+}
+.privacy-wrap{
+    margin: 20px 0;
+}
+.privacy-wrap p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    word-break: break-all;
+}
+.privacy-wrap ul{
+    padding-left: 20px;
+    margin: 10px 0;
+    list-style: disc;
+}
+.privacy-wrap ul li{
+    padding: 5px 0;
+    font-size: 1rem;
+}
 /* BLEIBEN page css end */
 
 
